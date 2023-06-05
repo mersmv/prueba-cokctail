@@ -1,0 +1,176 @@
+:root {
+    --orange: #FF9F1C;
+    --grey: #D9D9D9;
+    --black: #000000;
+    --light-white: #EDF2F4;
+  }
+
+@font-face {
+    font-family: 'GlacialR';
+    src: url('/assets/fonts/Glacial-regular.otf') format('truetype');
+  }
+@font-face {
+    font-family: 'GlacialB';
+    src: url('/assets/fonts/Glacial-Bold.otf') format('truetype');
+  }
+
+  *,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'GlacialR';
+    background-color: var(--light-white);
+}
+
+/* Estilos del header*/
+
+.header{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__logo{
+    width: 200px;
+}
+
+.selected__link{
+    border-bottom: solid 3px var(--orange);
+}
+
+.banner{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos de los detalles de la confirmación*/
+
+.confirmation__container{
+    width: 50%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.confirmation__title{
+    text-align: center;
+    font-size: 1.6rem;
+}
+.form__info{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.form__title{
+    font-size: 1.3rem;
+}
+
+.details__container{
+    display: flex;
+    width: 100%;
+    
+}
+.form__select{
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--grey);
+    border: var(--grey);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.map__container{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;}
+
+.end__info{
+    display: flex;
+    justify-content: end;
+}
+
+.all__info{
+display: flex;
+width: 100%;
+}
+
+.form__box {
+    width: 50%;
+  }
+
+.form{
+    width: 100%;
+  }
+.confirmation__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.confirmation__message{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+.confirmation__name{
+    font-family: 'GlacialB';
+  }
+.button__container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button__back{
+    width: 170px;
+    height: 50px;
+    background-color: var(--grey);
+    border-radius: 30px;
+    border: solid 1px transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.confirm__submit{
+    width: 170px;
+    height: 50px;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 30px;
+    border: solid 1px transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+}

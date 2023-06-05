@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Og Burger</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header__list">
+        <li class="header__element">
+          <a href="" class="header__link">Home</a>
+        </li>
+        <li class="header__element">
+          <a href="" class="header__link">Carta</a>
+        </li>
+        <img src="assets/images/og-logo.png" alt="Logo de Og Burger" class="header__logo">
+        <li class="header__element">
+          <a href="" class="header__link selected__link">Reservar</a>
+        </li>
+        <li class="header__element">
+          <a href="" class="header__link">Galeria</a>
+        </li>
+      </ul>
+    </header>
+    <img src="assets/images/burger.png"  class="banner" alt="Imagen de hamburguesa">
+    <section>
+      <div class="confirmation__container">
+        <h1 class="confirmation__title">Detalles de la reserva:</h1>
+        <div class="details__container">
+            <form action="" class="form">
+                <div class="all__info">
+                <div class="form__box">
+                    <div class="form__container">
+                        <div class="form__people">
+                            <div class="form__info">
+                                <i class="fa-solid fa-user-group form__icon"></i>
+                                <h2 class="form__title">Personas:</h2>
+                            </div>
+                            <select class="form__select" name="personas">
+                            <option value="1" class="option__select">1</option>
+                            <option value="2" class="option__select">2</option>
+                            <option value="3" class="option__select">3</option>
+                            <option value="4" class="option__select">4</option>
+                            <option value="5" class="option__select">5</option>
+                            <option value="6" class="option__select">6</option>
+                            <option value="7" class="option__select">7</option>
+                            <option value="8" class="option__select">8</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="form__container">
+                        <div class="form__people">
+                            <div class="form__info">
+                                <i class="fa-solid fa-calendar-days form__icon"></i>
+                            <h2 class="form__title">Fecha:</h2>
+                            </div>
+                            <select class="form__select" name="fecha">
+                            <option value="1" class="option__select">1</option>
+                            <option value="2" class="option__select">2</option>
+                            <option value="3" class="option__select">3</option>
+                            <option value="4" class="option__select">4</option>
+                            <option value="5" class="option__select">5</option>
+                            <option value="6" class="option__select">6</option>
+                            <option value="7" class="option__select">7</option>
+                            <option value="8" class="option__select">8</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="form__container">
+                        <div class="form__people">
+                            <div class="form__info">
+                                <i class="fa-solid fa-clock form__icon"></i>
+                                <h2 class="form__title">Hora:</h2>
+                            </div>
+                            <select class="form__select" name="hora">
+                            <option value="1" class="option__select">21:00</option>
+                            <option value="2" class="option__select">21:15</option>
+                            <option value="3" class="option__select">21:30</option>
+                            <option value="4" class="option__select">21:45</option>
+                            <option value="5" class="option__select">22:00</option>
+                            <option value="6" class="option__select">22:15</option>
+                            <option value="7" class="option__select">22:30</option>
+                            <option value="8" class="option__select">22:45</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="map__container">
+                    <div class="form__info end__info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h2 class="form__title">Calle Trafalgar 18, Madrid</h2>
+                    </div>
+                    <img src="/assets/images/mapa.png" alt="Mapa del restaurante" class="map__photo">
+                </div>
+                </div>
+                <div class="confirmation__box">
+                    <p class="confirmation__message">Reserva a nombre de: <span class="confirmation__name">Mercedes Sierra</span></p>
+                    <div class="button__container">
+                    <button class="button__back" id="back">Volver atrás</button>
+                    <input type="submit" class="confirm__submit"  value="Confirmar reserva"></input>
+                    </div>
+                </div>
+            </div> 
+            </form>
+        </section>
+    <script
+      src="https://kit.fontawesome.com/c655cb89ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
